@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="" href="css/bootstrap-icons.css">
+         <link rel="stylesheet" type="" href="css/bootstrap.min.css">
+          <link rel="stylesheet" type="" href="css/default.css">
+
+            <link rel="icon" type="image/x-icon" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/favicons.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="icon" type="image/x-icon" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/favicons.png">
+  <link rel="stylesheet" id="google-font-cuprum-css" href="https://fonts.googleapis.com/css2?family=Cuprum%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700&amp;display=swap&amp;ver=1.1.0" media="all">
+   <link rel="stylesheet" id="boxicons-css" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/css/boxicons.min.css?ver=1.1.0" media="all">
+   <link rel="stylesheet" id="fontawesome-all-css" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/css/all.css?ver=1.1.0" media="all">
+   <!--CSS BOOTSTRAP LINK-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!--link to css file path-->
+   <link rel="stylesheet" href="css/style.css">
+  
+   <!--bootstrap icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/typography.css" rel="stylesheet">
+        <style>
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: poppins;
+}
+
+.inner-banner {
+    .inner-bannerdot {
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+        opacity: 0.9;
+        animation: move 10s linear infinite alternate;
+    }
+}
+        .inner-banner {
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/breadcrumb/breadcrumb.png');
+        }
+.page-active {
+  color: var(--primary-color1) !important;
+}
+
+header.style-1 {
+  background-color: #0b0f14;
+  width: 100%;
+  z-index: 99;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include xl-device() {
+    padding: 0 30px;
+  }
+  @include lg-device() {
+    padding: 0 30px;
+  }
+  @include xxl-device() {
+    padding: 0 55px;
+  }
+  @include lg-down-device() {
+    padding: 0 20px;
+  }
+
+  .header-sticky-logo {
+    display: none;
+  }
+
+  &.sticky {
+    .header-logo {
+      display: none;
+    }
+    .header-sticky-logo {
+      display: block;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark--bg);
+    animation: smooth-header 0.5s linear;
+    padding: 0 60px;
+
+    @include xl-device() {
+      padding: 0 30px;
+    }
+    @include lg-device() {
+      padding: 0 30px;
+    }
+    @include xxl-device() {
+      padding: 0 55px;
+    }
+    @include lg-down-device() {
+      padding: 0 20px;
+      top: 0;
+    }
+  }
+}
+  .nav-right {
+    .header-icons {
+      margin-right: 20px;
+
+      @include xl-down-device() {
+        margin-right: 0;
+      }
+    }
+
+    .hotline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 35px 0 20px;
+
+      .hotline-icon {
+        margin-right: 8px;
+
+        svg {
+          fill: var(--white);
+        }
+      }
+
+      .hotline-info {
+        span {
+          font-size: 12px;
+          font-weight: 500;
+          font-family: $font-poppins;
+          color: var(--white);
+        }
+
+        h6 {
+          font-size: 16px;
+          font-weight: 500;
+          font-family: $font-poppins;
+          color: var(--white);
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .sidebar-btn .bi {
+      font-size: 24px;
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    .search-btn {
+      height: 42px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      padding-right: 15px;
+      margin-right: 15px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 20px;
+        border-radius: 1px;
+        background: var(--white);
+      }
+
+      .bi {
+        font-size: 18px;
+        color: var(--white);
+      }
+
+      @include lg-down-device() {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &.style-2 {
+      .hotline .hotline-icon svg {
+        fill: var(--text-color);
+      }
+
+      .hotline .hotline-info span,
+      .hotline .hotline-info h6 {
+        color: var(--text-color);
+      }
+
+      .sidebar-btn .bi,
+      .search-btn .bi {
+        color: var(--text-color);
+      }
+
+      .search-btn::after {
+        background: var(--text-color);
+      }
+
+      @include lg-down-device() {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+
+        
+        .inner-bannerdot, .inner-bannerwave {
+            position: absolute;
+        }
+        .inner-bannerdot {
+            bottom: 10px;
+            left: 20%;
+            opacity: 0.9;
+            animation: move 10s linear infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: rotate(0deg) scaleX(0); }
+            100% { transform: rotate(360deg) scaleX(1); }
+        }
+        .inner-bannerwave {
+            bottom: 0;
+            right: 0;
+            opacity: 0.1;
+        }
+        .down-arrow-icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ffffff;
+            box-shadow: 3px 4px 30px rgba(136, 136, 136, 0.1);
+            height: 3.75rem;
+            width: 3.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .down-arrow-icon svg {
+            animation: vibrate 1.5s linear infinite;
+            fill: var(--primary-color1);
+            width: 1rem;
+            height: 1.75rem;
+        }
+        @keyframes vibrate {
+            0%, 50%, 100% { transform: translateY(0px); }
+            25% { transform: translateY(-5px); }
+            75% { transform: translateY(5px); }
+        }
+        .breadcrumb {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .breadcrumb-item {
+            color: var(--primary-color1);
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 20px;
+            position: relative;
+        }
+        .breadcrumb-item:first-child {
+            padding-left: 0;
+        }
+        .breadcrumb-item.active {
+            color: #dddddd;
+        }
+        .breadcrumb-item + .breadcrumb-item::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+        .inner-banner-title {
+            font-size: 55px;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .page-wrapper {
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            position: relative;
+        }
+        .section-title span {
+            display: block;
+            font-size: 18px;
+            color: var(--primary-color1);
+        }
+        .section-title h3 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        .section-title .para {
+            font-size: 16px;
+            color: #666;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu-btn {
+    display: block;
+    margin-right: auto;
+}
+
+.mobile-menu-btn h5 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-btn, .sidebar-btn {
+    cursor: pointer;
+}
+
+.search-btn {
+    height: 42px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.search-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 20px;
+    border-radius: 1px;
+    background: var(--white);
+}
+
+.search-btn .bi, .sidebar-btn .bi {
+    color: var(--white);
+}
+
+.search-btn .bi {
+    font-size: 18px;
+}
+
+.sidebar-btn .bi {
+    font-size: 24px;
+}
+
+.hotline {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .hotline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 35px;
+        margin-left: 20px;
+    }
+}
+
+.hotline-icon {
+    margin-right: 8px;
+}
+
+.hotline-icon svg {
+    fill: var(--white);
+}
+
+.hotline-info span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.hotline-info h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+.eg-btn {
+    display: inline-block;
+}
+
+.btn--primary {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.35s ease-in;
+    background: var(--primary-color1);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--primary:hover {
+    background: #191a1c;
+}
+
+.btn--primary a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo img {
+    min-width: 120px;
+    max-width: 100%;
+}
+    .teams{
+          display: flex;
+    justify-content: space-evenly;
+    }
+    .container{
+      margin: 60px 0px 0px 0px;
+      display:flex;
+      flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    }
+    .single-team1 {
+    background: #ffffff;
+    box-shadow: 3px 5px 35px rgba(86, 68, 169, 0.1);
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+    .single-team1 .team-image .social-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.single-team1 .team-image img {
+    width: 100%;
+    transition: all 0.65s ease;
+}
+.single-team1 .team-image .social-area .social-plus {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: all 0.42s ease-in-out;
+}
+
+.container img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+.single-team1 .team-image .social-area .social-plus .bx {
+    font-size: 18px;
+    color: var(--primary-color1);
+    transition: all 0.42s ease-in-out;
+    cursor: pointer;
+}
+
+
+        </style>
+    </head>
+    <body>
+ <header class="header-area style-1">
+        <div class="header-logo">
+            <a href="#" title="Spinner" >
+	<img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+										        </div>
+        <div class="header-logo header-sticky-logo">
+            						<a href="#" title="Spinner" >
+															<img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+										        </div>
+        <div class="main-nav show-menu">
+            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+                <div class="mobile-logo-wrap ">
+                <a href="#" title="Spinner" ><img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+				</div>
+                <div class="menu-close-btn" >
+                    <i class="bi bi-x-lg text-white"></i>
+                </div>
+            </div>
+            
+            <div class="main-nav-wrapper"><ul id="menu-main-menu" class="ul"><li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-39"><a href="#" >Home</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-44"><a href="#" >Home 1</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="#" >Home 2</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="#" >Home 3</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3189"><a href="#" >Home 4</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3188"><a href="#" >Home 5</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-53"><a href="#">Pages</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="#" >About Us</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-52"><a href="#" >Team</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-810 current_page_item menu-item-814"><a href="#1" aria-current="page" >Team Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902"><a href="#" >Team Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-901"><a href="#" >Team Style 3</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2688"><a href="#" >Job List</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-2302" class="menu-item menu-item-type-post_type menu-item-object-job-details menu-item-2302"><a href="#" >Job Details</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-2110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2110"><a href="#" >Faq</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-1912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1912"><a href="#" >Error</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56"><a href="#">Services</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-50"><a href="" >Services</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="#" >Service Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="#" >Service Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-949"><a href="#" >Service Style 3</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3334"><a href="#" >Service Style 4</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3333"><a href="#" >Service Style 5</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2304"><a href="#" >Service Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57"><a href="#">Projects</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-768"><a href="#" >Projects</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-1677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1677"><a href="#" >Project Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-1676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1676"><a href="#" >Project Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-1675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675"><a href="#" >Project Style 3</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3340"><a href="#" >Project Style 4</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-spinner-project menu-item-2687"><a href="#" >Project Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58"><a href="#">Blog</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-1711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1711"><a href="blog-grid.html" >Blog Grid</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#" >Blog Standard</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3038" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3038"><a href="#">Blog Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-2109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2109"><a href="#" >Contact Us</a><i class="bi bi-chevron-down"></i></li>
+</ul></div>                        <!-- mobile-search-area -->
+            <div class="d-lg-none d-block">
+                <form class="mobile-menu-form">
+                    <div class="input-with-btn d-flex flex-column">
+                        <input type="text" placeholder="Search blog..">
+                        <button type="submit" class="eg-btn btn--primary btn--sm">Search</button>
+                    </div>
+                </form>
+            </div>
+                    </div>
+                    <div class="nav-right d-flex align-items-center">
+                <div class="mobile-menu-btn d-lg-none d-block">
+                    <h5 class="text-white mb-0">MENU</h5>
+                </div>
+                                    <div class="header-icons d-flex align-items-center">
+                                                    <div class="search-btn">
+                                <i class="bi bi-search"></i>
+                            </div>
+                                                                        <div class="sidebar-btn">
+                            <i class="bi bi-list"></i>
+                        </div>
+                                            </div>
+                                            <div class="hotline d-xxl-flex d-none">
+                            <div class="hotline-icon">
+                                <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1225_6)">
+                                    <path d="M2.88867 3.31366C1.52734 3.7121 0.451563 4.8078 0.0996094 6.15585C0.0199219 6.45468 0 6.97265 0 8.53319L0.00664063 10.5254L7.37109 16.0039C11.4352 19.0254 14.948 21.5887 15.2004 21.7215C16.3027 22.2926 17.684 22.2926 18.7996 21.7215C19.0719 21.582 22.359 19.1781 26.6289 16.0039L33.9934 10.5254L34 8.53983C34 6.3285 33.9734 6.10936 33.5551 5.28593C33.2363 4.64843 32.5391 3.95116 31.9016 3.63241C30.9453 3.15429 32.134 3.18749 16.9602 3.19413C4.13711 3.19413 3.26055 3.20741 2.88867 3.31366ZM30.5801 6.0164C31.1977 6.34843 31.2973 6.61405 31.3305 7.96874L31.357 9.06444L24.4773 14.1777C19.291 18.0359 17.5312 19.3109 17.3055 19.3773C17.0531 19.4504 16.9469 19.4504 16.7012 19.3773C16.4754 19.3109 14.6891 18.0226 9.52266 14.1777L2.64297 9.06444L2.66953 7.96874C2.68945 7.07226 2.71602 6.83319 2.81563 6.64061C3.04141 6.20897 3.31367 6.00311 3.78516 5.90351C3.91133 5.87694 9.93437 5.86366 17.166 5.8703L30.3145 5.87694L30.5801 6.0164Z"></path>
+                                    <path d="M0.000124167 20.5926C0.000124167 28.1894 -0.0197977 27.7844 0.445046 28.7141C0.757155 29.3316 1.45442 30.0355 2.09192 30.3609C3.03489 30.8457 1.85286 30.8125 17.0001 30.8125C32.1275 30.8125 30.9454 30.8457 31.9017 30.3676C32.5392 30.0488 33.2365 29.3516 33.5552 28.7141C34.0267 27.7844 34.0001 28.1961 33.9868 20.5926L33.9669 13.7461L32.672 14.7023L31.3771 15.6652L31.3439 21.3961C31.3107 26.8348 31.304 27.1402 31.1845 27.3594C31.0118 27.6848 30.8857 27.8176 30.5802 27.9836L30.3146 28.123H17.0001H3.68567L3.42005 27.9836C3.11458 27.8176 2.98841 27.6848 2.81575 27.3594C2.69622 27.1402 2.68958 26.848 2.66966 21.4027L2.64973 15.6785L1.41458 14.7621C0.730593 14.2574 0.139577 13.8191 0.0864523 13.7926C0.0134054 13.7461 0.000124167 14.9082 0.000124167 20.5926Z"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1225_6">
+                                    <rect width="34" height="34"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="hotline-info">
+                                <span>Message Us</span>
+                                <h6><a href="mailto:info@example.com">info@example.com</a></h6>
+                            </div>
+                        </div>
+                                                                <div class="eg-btn btn--primary">
+                            <a class="header-btn" href="#">LET'S TALK</a>
+                        </div>
+                                                </div>
+            </header>
+         <div class="inner-banner" style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/breadcrumb/breadcrumb.png);"> <img src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/images/bg/inner-bannerdot.png" class="inner-bannerdot" alt="image">
+        <img src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/images/bg/inner-bannerwave.png" class="inner-bannerwave" alt="image">
+        <div class="text-center">
+            <h2 class="inner-banner-title">Team Style 1</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Team</a></li>
+                <li class="breadcrumb-item active">Team Style 1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <div class="inner-post">
+            <div class="elementor elementor-810">
+                <section class="elementor-section elementor-top-section">
+                    <div class="flex-container">
+                        <div class="flex-item">
+                           
+                        </div>
+                        <div class="flex-item">
+                            <div class="section-title primary4 position-relative">
+                                <span>-Our Team-</span>
+                                <h3>Our Creative Minds</h3>
+                                <p class="para mb-0">Get the most of reduction in your teams operating costs for the whole product which creates amazing UI/UX experiences.</p>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                           
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="teams">
+    <div class = "container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Lincoln Anthony</h4>
+              <p class="designation">Manager</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-1.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Savannah Nguyen</h4>
+              <p class="designation">Programmer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-2.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Cameron Williamson
+</h4>
+              <p class="designation">Web Developer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-3.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Brooklyn Simmons
+</h4>
+              <p class="designation">Ui/Ux Designer</p>
+          </div>
+      </div>  
+            
+    </div>          
+    </div>
+    </div>
+  </section>
+  <section class="teams">
+    <div class = "container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-4.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Arlene McCoy
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-5.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Jenny Wilson
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-6.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Robert Fox
+</h4>
+              <p class="designation">Web Developer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-7.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Arlene McCoy
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>  
+            
+    </div>          
+    </div>
+    </div>
+  </section>
+  <section class="teams">
+    <div class = "container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-8.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Arlene McCoy
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Member-Image-9.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Jenny Wilson
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Image-01-1.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Robert Fox
+</h4>
+              <p class="designation">Web Developer</p>
+          </div>
+      </div>            
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+      <div class="single-team1 hover-border1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+          <div class="team-image">
+            <img decoding="async" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Team-Image-02.png" alt="">
+            <div class="social-area gap-3">
+              <div class="social-plus"><i class="bx bx-plus"></i></div>
+              <ul class="social-links d-flex justify-content-center align-items-center flex-column gap-3">
+              <li><a href="https://www.facebook.com/" >
+              <i class="bx bxl-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/" >
+              <i class="bx bxl-instagram"></i></a></li>
+              <li><a href="https://twitter.com/" >
+              <i class="bx bxl-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/" >
+              <i class="bx bxl-pinterest-alt"></i></a></li>                                                                                               
+                                </ul>
+             </div>
+          </div>
+          <div class="team-content">
+              <h4 class="name">Arlene McCoy
+</h4>
+              <p class="designation">Graphic Designer</p>
+          </div>
+      </div>  
+            
+    </div>          
+    </div>
+    </div>
+  </section>
+  <footer class="footer-wrapper" id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-5">
+
+               <div class="col-md-6 col-lg-3 col-xl-3">
+                  <div  class="footer-item widget_block widget_media_image">
+                     <figure class="wp-block-image size-large">
+                      <img loading="lazy" decoding="async" width="146" height="33" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/footer1-logo.svg" alt="" class="wp-image-777">
+                    </figure>
+                  </div>
+                  <div  class="footer-item widget_block widget_text text-white">
+                     <p>Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                  </div>
+
+                  <!--email address input-->
+                  <div  class="footer-item widget_block">
+
+                     <form  method="post"  data-name="Footer one form">
+                        <div class="mc4wp-form-fields">
+                           <div class="footer-top">
+                              <div class="footer-mail-item" >
+
+                                 <div class="input-with-btn d-flex jusify-content-start align-items-strech bg-tertiary" >
+                                    <input id="email" type="email" name="EMAIL" placeholder="Enter your email">
+                                    <div >
+                                    <button id="send-button" type="submit">
+                                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                       <path d="M2 21l21-9-21-9v7.179l15 1.821-15 1.821z"/>
+                                   </svg>
+                       </button>
+                     </div>
+                       </div>
+                       </div>
+                       </div>
+                       </div>
+                       </form>
+                   
+                     <p></p>
+                  </div>
+               </div>
+               
+               
+               <div class="col-md-6 col-lg-3 col-xl-3">
+                <div id="nav_menu-5" class="footer-item footer-two widget_nav_menu text-white">
+                  <h5>Our Services</h5>
+                  <div class="menu-our-services-container ">
+                    <ul id="menu-our-services" class="menu list-unstyled">
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Content Writing</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Consultancy Services</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Digital Marketing</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Graphics Design</a>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">SEO Optimize</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-3 col-xl-3">
+               <div class="footer-item footer-two widget_nav_menu text-white">
+                 <h5>Company</h5>
+                 <div class="menu-company-container">
+                   <ul id="menu-company" class="menu list-unstyled">
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">About Us</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Services</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Project</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Blog Standard</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Blog Grid</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             
+             
+             <div class="col-md-6 col-lg-3 col-xl-3">
+               <div id="eg_contacts-3" class="footer-item widget_eg_contacts">
+                   <div class="footer-top footer-four text-white">
+                       <h5>Contact Us</h5>
+                       <div class="footer-contact-item">
+                           <ul class="address-list list-unstyled">
+
+                              <li class="d-flex align-items-center">
+                                 <div class="address-icon " id="footer-icon">
+                                     <i class="bi bi-geo-alt "></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
+                             </li>
+                             <li class="d-flex align-items-center">
+                                 <div class="num-icon " id="footer-icon">
+                                     <i class="bi bi-telephone text-red"></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="tel:+8801761456456">+8801761456456</a>
+                             </li>
+                             
+                               <li class="d-flex align-items-center">
+                                 <div class="mail-icon " id="footer-icon">
+                                     <i class="bi bi-chat-left-text text-red"></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="mailto:info@example.com">info@example.com</a>
+                             </li>
+                             
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+                     <!-- FOOTER BOTTOM-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-bottom " id="footer-bottom">
+         <div class="container">
+            <div class="row d-flex align-items-center g-3 ">
+               <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center justify-content-lg-start" id=" footer-bottom-text" >
+                  <p  class="text-white">Copyright 2024 <a  class="text-decoration-none text-danger"href="#">Spinner</a> | Design By <a class="text-decoration-none text-danger" href="">Oviya</a></p>
+               </div>
+               <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                  <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
+                     <li><a class="text-decoration-none text-white" target="_blank" href="#">Privacy Policy &nbsp;&nbsp;|  &nbsp;&nbsp;</a></li>
+                     <li><a class="text-decoration-none text-white" target="_blank" href="#">Terms of Use</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   </body>
+   <script src="https://www.spinner-wp.egenslab.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.8" id="elementor-frontend-js"></script>
+</html>
