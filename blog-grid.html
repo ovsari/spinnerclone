@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+ <link rel="stylesheet" type="" href="css/bootstrap-icons.css">
+         <link rel="stylesheet"  href="css/bootstrap.min.css">
+          <link rel="stylesheet" type="" href="css/default.css">
+          <link rel="stylesheet" type="" href="css/animate.css">
+          <link rel="stylesheet" type="" href="css/blog-and-page.css">
+          <link rel="stylesheet" type="" href="css/bootstrap-grid.css">
+          <link rel="stylesheet" type="" href="css/bootstrap-grid.min.css">
+          <link rel="stylesheet" type="" href="css/style.css">
+            <link rel="icon" type="image/x-icon" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/favicons.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="icon" type="image/x-icon" href="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/favicons.png">
+  <link rel="stylesheet" id="google-font-cuprum-css" href="https://fonts.googleapis.com/css2?family=Cuprum%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700&amp;display=swap&amp;ver=1.1.0" media="all">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!--link lesheetto css file path-->
+   <!--bootstrap icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/typography.css" rel="stylesheet">
+             <style>
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: poppins;
+}
+
+.inner-banner {
+    .inner-bannerdot {
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+        opacity: 0.9;
+        animation: move 10s linear infinite alternate;
+    }
+}
+        .inner-banner {
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/breadcrumb/breadcrumb.png');
+        }
+.page-active {
+  color: var(--primary-color1) !important;
+}
+
+header.style-1 {
+  background-color: #0b0f14;
+  width: 100%;
+  z-index: 99;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include xl-device() {
+    padding: 0 30px;
+  }
+  @include lg-device() {
+    padding: 0 30px;
+  }
+  @include xxl-device() {
+    padding: 0 55px;
+  }
+  @include lg-down-device() {
+    padding: 0 20px;
+  }
+
+  .header-sticky-logo {
+    display: none;
+  }
+
+  &.sticky {
+    .header-logo {
+      display: none;
+    }
+    .header-sticky-logo {
+      display: block;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark--bg);
+    animation: smooth-header 0.5s linear;
+    padding: 0 60px;
+
+    @include xl-device() {
+      padding: 0 30px;
+    }
+    @include lg-device() {
+      padding: 0 30px;
+    }
+    @include xxl-device() {
+      padding: 0 55px;
+    }
+    @include lg-down-device() {
+      padding: 0 20px;
+      top: 0;
+    }
+  }
+}
+  .nav-right {
+    .header-icons {
+      margin-right: 20px;
+
+      @include xl-down-device() {
+        margin-right: 0;
+      }
+    }
+
+    .hotline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 35px 0 20px;
+
+      .hotline-icon {
+        margin-right: 8px;
+
+        svg {
+          fill: var(--white);
+        }
+      }
+
+      .hotline-info {
+        span {
+          font-size: 12px;
+          font-weight: 500;
+          font-family: $font-poppins;
+          color: var(--white);
+        }
+
+        h6 {
+          font-size: 16px;
+          font-weight: 500;
+          font-family: $font-poppins;
+          color: var(--white);
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .sidebar-btn .bi {
+      font-size: 24px;
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    .search-btn {
+      height: 42px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      padding-right: 15px;
+      margin-right: 15px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 20px;
+        border-radius: 1px;
+        background: var(--white);
+      }
+
+      .bi {
+        font-size: 18px;
+        color: var(--white);
+      }
+
+      @include lg-down-device() {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &.style-2 {
+      .hotline .hotline-icon svg {
+        fill: var(--text-color);
+      }
+
+      .hotline .hotline-info span,
+      .hotline .hotline-info h6 {
+        color: var(--text-color);
+      }
+
+      .sidebar-btn .bi,
+      .search-btn .bi {
+        color: var(--text-color);
+      }
+
+      .search-btn::after {
+        background: var(--text-color);
+      }
+
+      @include lg-down-device() {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+
+        
+        .inner-bannerdot, .inner-bannerwave {
+            position: absolute;
+        }
+        .inner-bannerdot {
+            bottom: 10px;
+            left: 20%;
+            opacity: 0.9;
+            animation: move 10s linear infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: rotate(0deg) scaleX(0); }
+            100% { transform: rotate(360deg) scaleX(1); }
+        }
+        .inner-bannerwave {
+            bottom: 0;
+            right: 0;
+            opacity: 0.1;
+        }
+        .down-arrow-icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ffffff;
+            box-shadow: 3px 4px 30px rgba(136, 136, 136, 0.1);
+            height: 3.75rem;
+            width: 3.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .down-arrow-icon svg {
+            animation: vibrate 1.5s linear infinite;
+            fill: var(--primary-color1);
+            width: 1rem;
+            height: 1.75rem;
+        }
+        @keyframes vibrate {
+            0%, 50%, 100% { transform: translateY(0px); }
+            25% { transform: translateY(-5px); }
+            75% { transform: translateY(5px); }
+        }
+        .breadcrumb {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .breadcrumb-item {
+            color: var(--primary-color1);
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 20px;
+            position: relative;
+        }
+        .breadcrumb-item:first-child {
+            padding-left: 0;
+        }
+        .breadcrumb-item.active {
+            color: #dddddd;
+        }
+        .breadcrumb-item + .breadcrumb-item::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+        .inner-banner-title {
+            font-size: 55px;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .page-wrapper {
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            position: relative;
+        }
+        .section-title span {
+            display: block;
+            font-size: 18px;
+            color: var(--primary-color1);
+        }
+        .section-title h3 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        .section-title .para {
+            font-size: 16px;
+            color: #666;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu-btn {
+    display: block;
+    margin-right: auto;
+}
+
+.mobile-menu-btn h5 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-btn, .sidebar-btn {
+    cursor: pointer;
+}
+
+.search-btn {
+    height: 42px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.search-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 20px;
+    border-radius: 1px;
+    background: var(--white);
+}
+
+.search-btn .bi, .sidebar-btn .bi {
+    color: var(--white);
+}
+
+.search-btn .bi {
+    font-size: 18px;
+}
+
+.sidebar-btn .bi {
+    font-size: 24px;
+}
+
+.hotline {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .hotline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 35px;
+        margin-left: 20px;
+    }
+}
+
+.hotline-icon {
+    margin-right: 8px;
+}
+
+.hotline-icon svg {
+    fill: var(--white);
+}
+
+.hotline-info span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.hotline-info h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+.eg-btn {
+    display: inline-block;
+}
+
+.btn--primary {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.35s ease-in;
+    background: var(--primary-color1);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--primary:hover {
+    background: #191a1c;
+}
+
+.btn--primary a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo img {
+    min-width: 120px;
+    max-width: 100%;
+}
+    .teams{
+          display: flex;
+    justify-content: space-evenly;
+    }
+    .container{
+      margin: 60px 0px 0px 0px;
+      display:flex;
+      flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    }
+    .single-team1 {
+    background: #ffffff;
+    box-shadow: 3px 5px 35px rgba(86, 68, 169, 0.1);
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+    .single-team1 .team-image .social-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.single-team1 .team-image img {
+    width: 100%;
+    transition: all 0.65s ease;
+}
+.single-team1 .team-image .social-area .social-plus {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: all 0.42s ease-in-out;
+}
+
+.container img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+.single-team1 .team-image .social-area .social-plus .bx {
+    font-size: 18px;
+    color: var(--primary-color1);
+    transition: all 0.42s ease-in-out;
+    cursor: pointer;
+}
+
+
+        </style>
+    </head>
+    <body>
+ <header class="header-area style-1">
+        <div class="header-logo">
+            <a href="#" title="Spinner" >
+	<img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+										        </div>
+        <div class="header-logo header-sticky-logo">
+            						<a href="#" title="Spinner" >
+															<img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+										        </div>
+        <div class="main-nav show-menu">
+            <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+                <div class="mobile-logo-wrap ">
+                <a href="#" title="Spinner" ><img class="img-fluid" src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/logo/header1-logo.svg" alt="Spinner"></a>
+				</div>
+                <div class="menu-close-btn" >
+                    <i class="bi bi-x-lg text-white"></i>
+                </div>
+            </div>
+            
+            <div class="main-nav-wrapper"><ul id="menu-main-menu" class="ul"><li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-39"><a href="#" >Home</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-44"><a href="#" >Home 1</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="#" >Home 2</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="#" >Home 3</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3189"><a href="#" >Home 4</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3188"><a href="#" >Home 5</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-53"><a href="#">Pages</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="#" >About Us</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-52"><a href="#" >Team</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-810 current_page_item menu-item-814"><a href="#1" aria-current="page" >Team Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902"><a href="#" >Team Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-901"><a href="#" >Team Style 3</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2688"><a href="#" >Job List</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-2302" class="menu-item menu-item-type-post_type menu-item-object-job-details menu-item-2302"><a href="#" >Job Details</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-2110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2110"><a href="#" >Faq</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-1912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1912"><a href="#" >Error</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-56" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56"><a href="#">Services</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-50"><a href="" >Services</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="#" >Service Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="#" >Service Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-949"><a href="#" >Service Style 3</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3334"><a href="#" >Service Style 4</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3333"><a href="#" >Service Style 5</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2304"><a href="#" >Service Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-57" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57"><a href="#">Projects</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-768"><a href="#" >Projects</a><i class="bi bi-chevron-down"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-1677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1677"><a href="#" >Project Style 1</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-1676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1676"><a href="#" >Project Style 2</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-1675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675"><a href="#" >Project Style 3</a><i class="bi bi-chevron-down"></i></li>
+		<li id="menu-item-3340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3340"><a href="#" >Project Style 4</a><i class="bi bi-chevron-down"></i></li>
+	</ul>
+</li>
+	<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-spinner-project menu-item-2687"><a href="#" >Project Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58"><a href="#">Blog</a><i class="bi bi-chevron-down"></i>
+<ul class="sub-menu">
+	<li id="menu-item-1711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1711"><a href="#" >Blog Grid</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#" >Blog Standard</a><i class="bi bi-chevron-down"></i></li>
+	<li id="menu-item-3038" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3038"><a href="#">Blog Details</a><i class="bi bi-chevron-down"></i></li>
+</ul>
+</li>
+<li id="menu-item-2109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2109"><a href="#" >Contact Us</a><i class="bi bi-chevron-down"></i></li>
+</ul></div>                        <!-- mobile-search-area -->
+            <div class="d-lg-none d-block">
+                <form class="mobile-menu-form">
+                    <div class="input-with-btn d-flex flex-column">
+                        <input type="text" placeholder="Search blog..">
+                        <button type="submit" class="eg-btn btn--primary btn--sm">Search</button>
+                    </div>
+                </form>
+            </div>
+                    </div>
+                    <div class="nav-right d-flex align-items-center">
+                <div class="mobile-menu-btn d-lg-none d-block">
+                    <h5 class="text-white mb-0">MENU</h5>
+                </div>
+                                    <div class="header-icons d-flex align-items-center">
+                                                    <div class="search-btn">
+                                <i class="bi bi-search"></i>
+                            </div>
+                                                                        <div class="sidebar-btn">
+                            <i class="bi bi-list"></i>
+                        </div>
+                                            </div>
+                                            <div class="hotline d-xxl-flex d-none">
+                            <div class="hotline-icon">
+                                <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1225_6)">
+                                    <path d="M2.88867 3.31366C1.52734 3.7121 0.451563 4.8078 0.0996094 6.15585C0.0199219 6.45468 0 6.97265 0 8.53319L0.00664063 10.5254L7.37109 16.0039C11.4352 19.0254 14.948 21.5887 15.2004 21.7215C16.3027 22.2926 17.684 22.2926 18.7996 21.7215C19.0719 21.582 22.359 19.1781 26.6289 16.0039L33.9934 10.5254L34 8.53983C34 6.3285 33.9734 6.10936 33.5551 5.28593C33.2363 4.64843 32.5391 3.95116 31.9016 3.63241C30.9453 3.15429 32.134 3.18749 16.9602 3.19413C4.13711 3.19413 3.26055 3.20741 2.88867 3.31366ZM30.5801 6.0164C31.1977 6.34843 31.2973 6.61405 31.3305 7.96874L31.357 9.06444L24.4773 14.1777C19.291 18.0359 17.5312 19.3109 17.3055 19.3773C17.0531 19.4504 16.9469 19.4504 16.7012 19.3773C16.4754 19.3109 14.6891 18.0226 9.52266 14.1777L2.64297 9.06444L2.66953 7.96874C2.68945 7.07226 2.71602 6.83319 2.81563 6.64061C3.04141 6.20897 3.31367 6.00311 3.78516 5.90351C3.91133 5.87694 9.93437 5.86366 17.166 5.8703L30.3145 5.87694L30.5801 6.0164Z"></path>
+                                    <path d="M0.000124167 20.5926C0.000124167 28.1894 -0.0197977 27.7844 0.445046 28.7141C0.757155 29.3316 1.45442 30.0355 2.09192 30.3609C3.03489 30.8457 1.85286 30.8125 17.0001 30.8125C32.1275 30.8125 30.9454 30.8457 31.9017 30.3676C32.5392 30.0488 33.2365 29.3516 33.5552 28.7141C34.0267 27.7844 34.0001 28.1961 33.9868 20.5926L33.9669 13.7461L32.672 14.7023L31.3771 15.6652L31.3439 21.3961C31.3107 26.8348 31.304 27.1402 31.1845 27.3594C31.0118 27.6848 30.8857 27.8176 30.5802 27.9836L30.3146 28.123H17.0001H3.68567L3.42005 27.9836C3.11458 27.8176 2.98841 27.6848 2.81575 27.3594C2.69622 27.1402 2.68958 26.848 2.66966 21.4027L2.64973 15.6785L1.41458 14.7621C0.730593 14.2574 0.139577 13.8191 0.0864523 13.7926C0.0134054 13.7461 0.000124167 14.9082 0.000124167 20.5926Z"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1225_6">
+                                    <rect width="34" height="34"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="hotline-info">
+                                <span>Message Us</span>
+                                <h6><a href="mailto:info@example.com">info@example.com</a></h6>
+                            </div>
+                        </div>
+                                                                <div class="eg-btn btn--primary">
+                            <a class="header-btn" href="#">LET'S TALK</a>
+                        </div>
+                                                </div>
+            </header>
+<div class="inner-banner" style="background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/includes/theme-options/images/breadcrumb/breadcrumb.png);">
+            <img src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/images/bg/inner-bannerdot.png" class="inner-bannerdot" alt="image">
+            <img src="https://www.spinner-wp.egenslab.com/wp-content/themes/spinner/assets/images/bg/inner-bannerwave.png" class="inner-bannerwave" alt="image">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h2 class="inner-banner-title wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                                Blog Grid                            </h2>
+                            <ul id="breadcrumb" class="breadcrumb gap-3"><li class="breadcrumb-item"><a href="" previewlistener="true"> Home </a></li><li class="breadcrumb-item active">Blog Grid</li></ul>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-grid-section pt-120 pb-120" id="blog-grid">
+    <div class="container">
+        <div class="blog-wrapper">
+            <div class="row ">
+                                    <div class="col-md-12 col-lg-5 col-xl-4 or2">
+                        <div class="widget-area">
+                            <div id="block-24" class="blog-widget-item widget_block widget_search"><form role="search" method="get" action="" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label><div class="wp-block-search__inside-wrapper "><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="Search Here" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div></form></div><div id="block-32" class="blog-widget-item widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h3 class="wp-block-heading">Recent Posts</h3>
+
+
+<ul class="wp-block-latest-posts__list has-dates has-author wp-block-latest-posts"><li><div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:75px;max-height:75px;" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-150x150.png 150w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-420x420.png 420w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.spinner-wp.egenslab.com/what-is-user-experience-ux-design-everything-you-need/" previewlistener="true">What Is User Experience (UX) Design? Everything You Need.</a><div class="wp-block-latest-posts__post-author">by Egens Lab</div><time datetime="2022-08-19T08:45:46+00:00" class="wp-block-latest-posts__post-date">August 19, 2022</time></li>
+<li><div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:75px;max-height:75px;" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-150x150.png 150w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-420x420.png 420w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.spinner-wp.egenslab.com/what-is-seo-copywriting-a-complete-guide/" previewlistener="true">What Is SEO Copywriting? A Complete Guide</a><div class="wp-block-latest-posts__post-author">by Egens Lab</div><time datetime="2022-08-19T08:08:33+00:00" class="wp-block-latest-posts__post-date">August 19, 2022</time></li>
+<li><div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:75px;max-height:75px;" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-150x150.png 150w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-420x420.png 420w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.spinner-wp.egenslab.com/how-to-create-a-useful-excellent-optimized-section-2/" previewlistener="true">How to Create a Useful &amp; Excellent Optimized Section</a><div class="wp-block-latest-posts__post-author">by Egens Lab</div><time datetime="2022-08-19T06:46:24+00:00" class="wp-block-latest-posts__post-date">August 19, 2022</time></li>
+<li><div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:75px;max-height:75px;" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-150x150.png 150w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-420x420.png 420w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.spinner-wp.egenslab.com/are-you-too-old-for-a-career-in-web-development/" previewlistener="true">Are You Too Old for a Career in Web Development?</a><div class="wp-block-latest-posts__post-author">by Egens Lab</div><time datetime="2022-08-19T06:44:23+00:00" class="wp-block-latest-posts__post-date">August 19, 2022</time></li>
+<li><div class="wp-block-latest-posts__featured-image alignleft"><img loading="lazy" decoding="async" width="150" height="150" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" style="max-width:75px;max-height:75px;" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-150x150.png 150w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-420x420.png 420w" sizes="(max-width: 150px) 100vw, 150px"></div><a class="wp-block-latest-posts__post-title" href="https://www.spinner-wp.egenslab.com/what-is-the-rule-of-thirds-in-design-a-complete-guide/" previewlistener="true">What is the Rule of Thirds in Design? A Complete Guide</a><div class="wp-block-latest-posts__post-author">by Egens Lab</div><time datetime="2022-08-19T06:41:48+00:00" class="wp-block-latest-posts__post-date">August 19, 2022</time></li>
+</ul><div class="clearfix"></div></div></div>
+</div><div id="block-25" class="blog-widget-item widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h3 class="wp-block-heading">Post Categories</h3>
+
+
+<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-21"><a href="https://www.spinner-wp.egenslab.com/category/branding/" previewlistener="true">Branding</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="" previewlistener="true">Business</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="/" previewlistener="true">Creative Agency</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="" previewlistener="true">Graphics Design</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="" previewlistener="true">Inspiration</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="" previewlistener="true">One Page Template</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="" previewlistener="true">Ui/Ux Design</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="" previewlistener="true">Web Development</a>
+</li>
+</ul></div></div>
+</div><div id="block-26" class="blog-widget-item widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<h3 class="wp-block-heading">Tags</h3>
+
+
+<p class="wp-block-tag-cloud"><a href="" class="tag-cloud-link tag-link-26 tag-link-position-1" style="font-size: 8pt;" aria-label="Advertising (3 items)" previewlistener="true">Advertising</a>
+<a href="" class="tag-cloud-link tag-link-28 tag-link-position-2" style="font-size: 8pt;" aria-label="Agency (3 items)" previewlistener="true">Agency</a>
+<a href="" class="tag-cloud-link tag-link-31 tag-link-position-3" style="font-size: 8pt;" aria-label="Agency Branding (3 items)" previewlistener="true">Agency Branding</a>
+<a href="" class="tag-cloud-link tag-link-30 tag-link-position-4" style="font-size: 8pt;" aria-label="Branding (3 items)" previewlistener="true">Branding</a>
+<a href="" class="tag-cloud-link tag-link-33 tag-link-position-5" style="font-size: 8pt;" aria-label="Business (3 items)" previewlistener="true">Business</a>
+<a href="" class="tag-cloud-link tag-link-32 tag-link-position-6" style="font-size: 8pt;" aria-label="Inspiration (3 items)" previewlistener="true">Inspiration</a>
+<a href="" class="tag-cloud-link tag-link-29 tag-link-position-7" style="font-size: 8pt;" aria-label="Ui/Ux (3 items)" previewlistener="true">Ui/Ux</a>
+<a href="" class="tag-cloud-link tag-link-27 tag-link-position-8" style="font-size: 8pt;" aria-label="Website UI (3 items)" previewlistener="true">Website UI</a></p></div></div>
+</div>                        </div>
+                    </div>
+                                <div class="col-md-12 col-lg-7 col-xl-8 or1">
+                    <div class="row position-relative justify-content-center g-4">
+                        <div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1453" class="post-1453 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-inspiration category-web-development tag-advertising tag-agency tag-business">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-15-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="" previewlistener="true">Business</a></span>
+                    <h4><a href="" previewlistener="true">What Is User Experience (UX) Design? Everything You Need.</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=20&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div><div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1451" class="post-1451 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-graphics-design category-one-page-template tag-agency-branding tag-branding tag-inspiration">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-10-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="" previewlistener="true">Business</a></span>
+                    <h4><a href="" previewlistener="true">What Is SEO Copywriting? A Complete Guide</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=20&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div><div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1446" class="post-1446 post type-post status-publish format-standard has-post-thumbnail hentry category-creative-agency category-inspiration category-web-development tag-advertising tag-ui-ux tag-website-ui">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-8-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="" previewlistener="true">Creative Agency</a></span>
+                    <h4><a href="" previewlistener="true">How to Create a Useful &amp; Excellent Optimized Section</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div><div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1442" class="post-1442 post type-post status-publish format-standard has-post-thumbnail hentry category-creative-agency category-one-page-template category-ui-ux-design tag-advertising tag-agency-branding tag-ui-ux">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="https://www.spinner-wp.egenslab.com/are-you-too-old-for-a-career-in-web-development/" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-13-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="https://www.spinner-wp.egenslab.com/category/creative-agency/" previewlistener="true">Creative Agency</a></span>
+                    <h4><a href="https://www.spinner-wp.egenslab.com/are-you-too-old-for-a-career-in-web-development/" previewlistener="true">Are You Too Old for a Career in Web Development?</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=20&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="https://www.spinner-wp.egenslab.com/author/shafiqul/" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div><div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1439" class="post-1439 post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-business category-inspiration category-one-page-template tag-agency tag-branding tag-website-ui">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="https://www.spinner-wp.egenslab.com/what-is-the-rule-of-thirds-in-design-a-complete-guide/" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-12-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="https://www.spinner-wp.egenslab.com/category/branding/" previewlistener="true">Branding</a></span>
+                    <h4><a href="https://www.spinner-wp.egenslab.com/what-is-the-rule-of-thirds-in-design-a-complete-guide/" previewlistener="true">What is the Rule of Thirds in Design? A Complete Guide</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=20&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="https://www.spinner-wp.egenslab.com/author/shafiqul/" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div><div class="col-lg-6 col-md-6 col-sm-10"><article id="post-1432" class="post-1432 post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-one-page-template category-ui-ux-design tag-agency tag-ui-ux tag-website-ui">
+                <div class="sigle-blog-1 wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                <div class="blog-image">
+                                <div class="image">
+                <a href="https://www.spinner-wp.egenslab.com/a-lifestyle-you-always-being-the-focal-point-is-innately/" previewlistener="true">
+                    <img width="880" height="550" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-11.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-11.png 880w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-11-300x188.png 300w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-11-768x480.png 768w, https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/Blog-Standard-Image-11-370x231.png 370w" sizes="(max-width: 880px) 100vw, 880px">                </a>
+            </div>
+                        </div>
+                <div class="blog-content hover-border1">
+                    <span><a href="https://www.spinner-wp.egenslab.com/category/branding/" previewlistener="true">Branding</a></span>
+                    <h4><a href="https://www.spinner-wp.egenslab.com/a-lifestyle-you-always-being-the-focal-point-is-innately/" previewlistener="true">A lifestyle you always being the focal point is innately.</a></h4>
+                    <div class="blog-meta">
+                        <div class="author-img">
+                            <img alt="" src="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=20&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ac0b89ced4ce2e492cab4aaf8529ac5?s=40&amp;d=mm&amp;r=g 2x" class="avatar avatar-20 photo" height="20" width="20" loading="lazy" decoding="async">                        </div>
+                        <div class="designation">
+                            <h5><a href="https://www.spinner-wp.egenslab.com/author/shafiqul/" previewlistener="true">Egens Lab</a></h5>
+                            <div class="date">August 19, 2022<span>2 mins Read</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+</div>                    </div>
+                    <div class="row">
+                        <nav class="pagination-wrap">
+                            <nav aria-label="Page navigation">
+	<ul class="pagination d-flex justify-content-center gap-md-3 gap-2">
+	 <li class="active"><a aria-current="page" class="page-link current">1</a></li>
+	<li><a class="page-link" href="https://www.spinner-wp.egenslab.com/blog-grid/page/2/" previewlistener="true">2</a></li>
+	<li><a class="next page-link" href="https://www.spinner-wp.egenslab.com/blog-grid/page/2/" previewlistener="true"> </a></li>
+</ul>
+</nav>                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <footer class="footer-wrapper" id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-5">
+
+               <div class="col-md-6 col-lg-3 col-xl-3">
+                  <div  class="footer-item widget_block widget_media_image">
+                     <figure class="wp-block-image size-large">
+                      <img loading="lazy" decoding="async" width="146" height="33" src="https://www.spinner-wp.egenslab.com/wp-content/uploads/2022/08/footer1-logo.svg" alt="" class="wp-image-777">
+                    </figure>
+                  </div>
+                  <div  class="footer-item widget_block widget_text text-white">
+                     <p>Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                  </div>
+
+                  <!--email address input-->
+                  <div  class="footer-item widget_block">
+
+                     <form  method="post"  data-name="Footer one form">
+                        <div class="mc4wp-form-fields">
+                           <div class="footer-top">
+                              <div class="footer-mail-item" >
+
+                                 <div class="input-with-btn d-flex jusify-content-start align-items-strech bg-tertiary" >
+                                    <input id="email" type="email" name="EMAIL" placeholder="Enter your email">
+                                    <div >
+                                    <button id="send-button" type="submit">
+                                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                       <path d="M2 21l21-9-21-9v7.179l15 1.821-15 1.821z"/>
+                                   </svg>
+                       </button>
+                     </div>
+                       </div>
+                       </div>
+                       </div>
+                       </div>
+                       </form>
+                   
+                     <p></p>
+                  </div>
+               </div>
+               
+               
+               <div class="col-md-6 col-lg-3 col-xl-3">
+                <div id="nav_menu-5" class="footer-item footer-two widget_nav_menu text-white">
+                  <h5>Our Services</h5>
+                  <div class="menu-our-services-container ">
+                    <ul id="menu-our-services" class="menu list-unstyled">
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Content Writing</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Consultancy Services</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Digital Marketing</span>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">Graphics Design</a>
+                        </a>
+                      </li>
+                      <li >
+                        <a class="text-decoration-none text-white" href="">
+                          <span class="arrow">&#8594;</span>
+                          <span class="link-text">SEO Optimize</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-3 col-xl-3">
+               <div class="footer-item footer-two widget_nav_menu text-white">
+                 <h5>Company</h5>
+                 <div class="menu-company-container">
+                   <ul id="menu-company" class="menu list-unstyled">
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">About Us</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Services</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Project</span>
+                       </a>
+                     </li>
+                     <li >
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Blog Standard</span>
+                       </a>
+                     </li>
+                     <li>
+                       <a class="text-decoration-none text-white" href="">
+                         <span class="arrow">&#8594;</span>
+                         <span class="link-text">Blog Grid</span>
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             
+             
+             <div class="col-md-6 col-lg-3 col-xl-3">
+               <div id="eg_contacts-3" class="footer-item widget_eg_contacts">
+                   <div class="footer-top footer-four text-white">
+                       <h5>Contact Us</h5>
+                       <div class="footer-contact-item">
+                           <ul class="address-list list-unstyled">
+
+                              <li class="d-flex align-items-center">
+                                 <div class="address-icon " id="footer-icon">
+                                     <i class="bi bi-geo-alt "></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
+                             </li>
+                             <li class="d-flex align-items-center">
+                                 <div class="num-icon " id="footer-icon">
+                                     <i class="bi bi-telephone text-red"></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="tel:+8801761456456">+8801761456456</a>
+                             </li>
+                             
+                               <li class="d-flex align-items-center">
+                                 <div class="mail-icon " id="footer-icon">
+                                     <i class="bi bi-chat-left-text text-red"></i>
+                                 </div>
+                                 <a class="text-decoration-none text-white" href="mailto:info@example.com">info@example.com</a>
+                             </li>
+                             
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+                     <!-- FOOTER BOTTOM-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-bottom " id="footer-bottom">
+         <div class="container">
+            <div class="row d-flex align-items-center g-3 ">
+               <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center justify-content-lg-start" id=" footer-bottom-text" >
+                  <p  class="text-white">Copyright 2024 <a  class="text-decoration-none text-danger"href="#">Spinner</a> | Design By <a class="text-decoration-none text-danger" href="">Oviy</a></p>
+               </div>
+               <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                  <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
+                     <li><a class="text-decoration-none text-white" target="_blank" href="#">Privacy Policy &nbsp;&nbsp;|  &nbsp;&nbsp;</a></li>
+                     <li><a class="text-decoration-none text-white" target="_blank" href="#">Terms of Use</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+      <!--bootsrap js-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>  
+   <!--js file-->
+   <script src="js/main.js"></script>
+    </body>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap.min.js">
+    
+</script>
+
+<script src="https://www.spinner-wp.egenslab.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.8" id="elementor-frontend-js"></script>
+</html>

@@ -1,0 +1,499 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Document Setup
+# Clearing
+# Base Transitions
+# Forms
+# Accessibility
+# Alignments
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Header Menu Issue with Admin Bar
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Document Setup
+--------------------------------------------------------------*/
+body {
+    box-sizing: border-box;
+}
+:root {
+    /*color Variable*/
+    --primary-color1: rgb(230, 0, 76);
+    --primary-opcaity: rgba(230, 0, 76, 0.1);
+  
+    --primary-color2: rgb(0, 202, 235);
+    --primary-opcaity2: rgba(0, 202, 235, 0.1);
+  
+    --primary-color3: rgb(160, 68, 255);
+    --primary-opcaity3: rgba(160, 68, 255, 0.1);
+  
+    --primary-color4: rgb(39, 174, 96);
+    --primary-opcaity4: rgba(39, 174, 96, 0.1);
+    --primary-color4-light: #f6fffc;
+
+    --primary-color5: rgb(255, 115, 66);
+    --primary-opcaity5: rgba(255, 76, 76, 0.1);
+  
+    --primary-color6: rgb(47, 128, 237);
+    --primary-opcaity6: rgba(47, 128, 237, 0.1);
+  
+    --text-color: #18212e;
+    --text-color2: #676767;
+    --text-color3: #afafaf;
+    --text-light: #eeeeee;
+  
+    --light-bg: #f8f8f8;
+    --dark--bg: #0a120f;
+    --dark-bg: #0a120f;
+    --white: #fff;
+  }
+*,
+*::before,
+*::after {
+    /* box-sizing: inherit; */
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+table * {
+    word-break: initial;
+}
+#site-content {
+    overflow: hidden;
+}
+
+.page-wrapper .inner-post table th,
+.blog-wrapper .content table th,
+.blog-comment-form table th{
+    color: #00274e;
+}
+.blog-widget-item li a {
+    font-family: "Cuprum", sans-serif;
+}
+.blog-widget-item li {
+    font-family: "Cuprum", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Clearing
+--------------------------------------------------------------*/
+
+.group::after,
+.entry-content::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Base Transitions
+--------------------------------------------------------------*/
+
+a,
+path {
+    transition: all 0.15s linear;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"] {
+    border: 1px solid;
+    border-color: #cccccc #cccccc #bbbbbb;
+    border-radius: 3px;
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1;
+    padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-color: #cccccc #bbbbbb #aaaaaa;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    border-color: #aaaaaa #bbbbbb #bbbbbb;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    color: #666666;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border-color:var(--primary-color1);
+}
+
+select {
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    width: 100%;
+}
+
+.post-content input {
+    padding: 10px;
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 3px;
+}
+.kc-contact-form7 input,
+.kc-contact-form7 textarea {
+    padding: 10px;
+}
+
+.owl-carousel .owl-item img {
+    max-width: 100%;
+    width: auto;
+}
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    color:var(--primary_color);
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+    float: left;
+    margin-right: 2em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 2em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget select {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+    display: block;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.page-wrapper .inner-post:after,
+.content:after,
+.entry-content:after,
+.entry-summary:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+.blog-news .blog-post-area #commentform {
+    padding-bottom: 0;
+}
+.blog-news .blog-comment-form .form-submit {
+    margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+    display: none;
+}
+
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-wrapper .inner-post .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+    color: #555;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}
+.single .content figure.gallery-item {
+    margin-bottom: 20px;
+}
+.single .content figure.gallery-item img {
+    margin-bottom: 5px;
+}
+.blocks-gallery-grid:not(.has-nested-images), .wp-block-gallery:not(.has-nested-images) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 5px;
+}
+
+/*** NEW CSS ***/
+
+.blog-widget-item .wp-block-group__inner-container h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.blog-widget-item .wp-block-search .wp-block-search__label {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-family: "Cuprum", sans-serif;
+}
+
+.blog-widget-item area form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search {
+	margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+## Header Menu Issue With Admin Bar
+--------------------------------------------------------------*/
+
+@media (max-width: 991px){
+    body.logged-in.admin-bar .main-menu.show-menu {
+        margin-top: 42px;
+    }
+    body.logged-in.admin-bar header .main-nav {
+        margin-top: 32px;
+    }
+    body.logged-in.admin-bar header.sticky .main-nav {
+        margin-top: 0;
+    }
+    body.logged-in.admin-bar header.sticky .main-menu.show-menu {
+        margin-top: 0;
+    }
+    .widget-area{
+        margin-top: 40px;
+    }
+}
+body.logged-in.admin-bar .header-area.style-4{
+    margin-top: 32px;
+}
+body.logged-in.admin-bar .header-area.sticky {
+    margin-top: 32px;
+    position: absolute;
+}
+body.logged-in.admin-bar .header-area.sticky{
+    position: fixed;
+}
+  @media screen and (max-width: 783px) {
+    body.logged-in.admin-bar .header-area.sticky {
+        margin-top: 0;
+        position: fixed;
+    }
+    body.logged-in.admin-bar .header-area.sticky .main-nav {
+        margin-top: 0;
+    }
+  } 
+  @media screen and (max-width: 576px) {
+    body.logged-in.admin-bar .header-area.sticky{
+        position: fixed;
+        z-index: 99999;
+    }
+} 
+
+/*--------------------------------------------------------------
+## Breadcrumb
+--------------------------------------------------------------*/
